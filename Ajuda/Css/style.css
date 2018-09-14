@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar{
+    background-color: lightblue;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.top-bar-itens{
+    background-color: #1db2d6;
+    border-radius: 25px;
+    height: 48px;
+    margin-right: 30px;
+    margin-top: 15px;
+    width: 506px;
+    text-align: center;
+}
+
+.top-bar-itens a{
+    color: black;
+    font-size: 2.3em;
+    padding: 6px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.top-bar-itens a:hover{
+    color: orange;
+}
+
+.top-bar-itens a:active{
+    color: red;
+}
+    /*fim da top bar*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #aaaaaa;
+    width: 100%;
+    height: 70vh;
+}
+
+.contact h2{
+    font-size: 2.5em;
+    margin: 1em;   
+}
+
+.contact-email{
+margin: 1.5em;
+width: 100%;
+}
+
+.contact-email input[type="email"]{
+    background-color: #71b6c7;
+    border: black solid 0.5px;
+    border-radius: 5px;
+    height: 30px;
+    width: 48%;
+}
+
+.contact-textarea textarea{
+    background-color: #71b6c7;
+    border: black solid .5px;
+    border-radius: 5px;
+    height: 200px;
+    resize: none;
+}
+
+.banner-item-button{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-item-button form input[type="button"]{
+    background: cyan;
+    border: none;
+    border-radius: 9px;
+    color: black;
+    height: 30px;
+    width: 20%;
+}
+
+.banner-item-button form input[type="button"]:hover{
+    background-color: orange;
+}
+
+.banner-item-button form input[type="button"]:active{
+    background-color: blue;
+}
+/*Fim do Main*/
+
+.footer{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 50px;
+}
+
+.footer h4{
+    font-size: 24px;
+}
+
+.contatos{
+    padding: 10px;
+}
+
+.Aplicativos{
+    padding: 10px;
+}
+
+.criadores{
+    padding: 10px;
+}
+/*footer comum a todos*/
+
+@media screen and (max-width: 420px){
+    .top-bar{
+        height: 48px;
+        justify-content: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .top-bar-itens{
+        display: none;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .localizacao{
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .top-bar{
+        height: 60px;
+        justify-content: center;
+        padding: 2px;
+    }
+
+    .top-bar-itens{
+        height: 30px;
+        font-size: .7em;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .contact{
+        height: 80vh;
+        width: 100%;
+    }
+
+    .contact-email input[type="email"]{
+        width: 80%;
+    }
+
+    .contact-textarea textarea{
+        width: 80%
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+
+    .footer h4{
+        font-size: 14px;
+    }
+}

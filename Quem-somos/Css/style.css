@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar{
+    background-color: #cccccc;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.top-bar-itens{
+    background-color: #1db2d6;
+    border-radius: 25px;
+    height: 48px;
+    margin-right: 30px;
+    margin-top: 15px;
+    width: 506px;
+    text-align: center;
+}
+
+.top-bar-itens a{
+    color: black;
+    font-size: 2.3em;
+    padding: 6px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.top-bar-itens a:hover{
+    color: orange;
+}
+
+.top-bar-itens a:active{
+    color: red;
+}
+/*fim do top-bar*/
+
+.footer{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px
+}
+
+.footer h4{
+    font-size: 24px;
+}
+
+.contatos{
+    padding: 10px;
+}
+
+.Aplicativos{
+    padding: 10px;
+}
+
+.criadores{
+    padding: 10px;
+}
+/*footer comum a todos*/
+
+.pt1{
+    box-shadow: red
+}
